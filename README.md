@@ -1,2 +1,3 @@
 # dotstate-storage
-My dotfiles managed by dotstate
+
+Dotfiles managed by dotstate
