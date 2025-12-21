@@ -11,6 +11,34 @@ synced_files = [
     ".gitconfig",
 ]
 
+[[profiles.packages]]
+name = "eza"
+description = "ls replacement"
+manager = "brew"
+package_name = "eza"
+binary_name = "eza"
+
+[[profiles.packages]]
+name = "httpie"
+description = "curl replacement"
+manager = "brew"
+package_name = "httpie"
+binary_name = "httpie"
+
+[[profiles.packages]]
+name = "trash"
+description = "Trash helper"
+manager = "brew"
+package_name = "trash"
+binary_name = "trash"
+
+[[profiles.packages]]
+name = "rename"
+description = "batch rename tool"
+manager = "brew"
+package_name = "rename"
+binary_name = "rename"
+
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
@@ -24,8 +52,10 @@ synced_files = [
     ".profile",
     ".gitconfig",
 ]
+packages = []
 
 [[profiles]]
 name = "Server-Setup"
 description = "My server setup"
 synced_files = [".yarnrc"]
+packages = []
