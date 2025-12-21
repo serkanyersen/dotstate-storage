@@ -1,0 +1,109 @@
+[user]
+    name = Serkan Yersen
+    email = serkanyersen@gmail.com
+    signingkey = 51D7C443BB168EDC
+
+[github]
+  user = serkanyersen
+
+[color]
+    ui = auto
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+   meta = yellow bold
+   frag = magenta bold
+   old = red bold
+   new = green bold
+
+[color "status"]
+   added = yellow
+   changed = green
+   untracked = cyan
+
+[branch]
+   autosetuprebase = always
+   autosetupmerge = true
+
+[push]
+   default = tracking
+   followTags = true
+
+[commit]
+   verbose = true
+   # gpgsign = true
+
+[fetch]
+   tags = true
+   prune = true
+
+[rerere]
+   enabled = true
+
+[alias]
+    st = status
+    ci = commit
+    su = submodule update --recursive
+    br = branch -u
+    co = checkout
+    df = diff HEAD
+    lg = log -p
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    # unstage = reset --hard HEAD
+    unstage = !sh -c 'git reset --hard HEAD && git clean -fd'
+    put = push -u origin HEAD
+    undo = reset --soft HEAD^
+    rpo = remote prune origin
+    cob = !sh -c 'git co -b "$0"'
+    cor = !sh -c 'git co -t "$0"'
+    update = !sh -c 'git stash && git pull && git stash pop'
+    sl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --since='90 days ago'
+    id = rev-parse HEAD
+
+[core]
+	editor = vim
+	excludesfile = /Users/serkanyersen/.gitignore_global
+
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+
+[filter "hawser"]
+    clean = git hawser clean %f
+    smudge = git hawser smudge %f
+    required = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[pull]
+	rebase = true
+
+[difftool "Kaleidoscope"]
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+[mergetool "Kaleidoscope"]
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+    side-by-side = true
+
+[interactive]
+    diffFilter = delta --color-only

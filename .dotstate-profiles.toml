@@ -1,2 +1,6 @@
 [[profiles]]
 name = "Personal"
+
+[[profiles]]
+name = "Linux"
+description = "my linux machine setup"
