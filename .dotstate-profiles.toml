@@ -1,10 +1,31 @@
 [[profiles]]
 name = "Personal"
+synced_files = [
+    ".tmux.conf",
+    ".zshrc",
+    ".p10k.zsh",
+    ".sshconfig",
+    ".zshenv",
+    ".vimrc",
+    ".profile",
+    ".gitconfig",
+]
 
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
+synced_files = [
+    ".tmux.conf",
+    ".zshrc",
+    ".p10k.zsh",
+    ".sshconfig",
+    ".zshenv",
+    ".vimrc",
+    ".profile",
+    ".gitconfig",
+]
 
 [[profiles]]
 name = "Server-Setup"
 description = "My server setup"
+synced_files = [".yarnrc"]
