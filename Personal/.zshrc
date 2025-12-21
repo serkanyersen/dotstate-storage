@@ -32,7 +32,7 @@ antigen bundle mafredri/zsh-async
 
 antigen apply
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # shortcut to connect serkan.io
 # Basic shortcuts
@@ -49,9 +49,9 @@ fi
 if command -v vim >/dev/null 2>&1; then
   alias vi="vim"
 fi
-if command -v exa >/dev/null 2>&1; then
-  alias lst="exa --tree --git-ignore -I node_modules"
-  alias ls="exa -laFh --git"
+if command -v eza >/dev/null 2>&1; then
+  alias lst="eza --tree --git-ignore -I node_modules"
+  alias ls="eza -lah --git"
 fi
 if command -v zsh >/dev/null 2>&1; then
   alias reload="exec zsh"
