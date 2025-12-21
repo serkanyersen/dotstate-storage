@@ -40,6 +40,13 @@ manager = "brew"
 package_name = "rename"
 binary_name = "rename"
 
+[[profiles.packages]]
+name = "tig"
+description = "tig git manager"
+manager = "brew"
+package_name = "tig"
+binary_name = "tig"
+
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
