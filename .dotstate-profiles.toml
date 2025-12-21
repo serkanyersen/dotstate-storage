@@ -4,3 +4,7 @@ name = "Personal"
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
+
+[[profiles]]
+name = "Server-Setup"
+description = "My server setup"
