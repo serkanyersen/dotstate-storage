@@ -1,14 +1,15 @@
 [[profiles]]
 name = "Personal"
 synced_files = [
-    ".tmux.conf",
-    ".zshrc",
-    ".p10k.zsh",
-    ".sshconfig",
-    ".zshenv",
-    ".vimrc",
     ".profile",
+    ".zshrc",
+    ".zshenv",
+    ".p10k.zsh",
+    ".vimrc",
     ".gitconfig",
+    ".tmux.conf",
+    ".sshconfig",
+    ".yarnrc",
 ]
 
 [[profiles.packages]]
