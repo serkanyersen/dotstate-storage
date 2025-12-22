@@ -4,7 +4,6 @@ synced_files = [
     ".gitconfig",
     ".p10k.zsh",
     ".profile",
-    ".ssh/known_hosts",
     ".sshconfig",
     ".tmux.conf",
     ".vimrc",
