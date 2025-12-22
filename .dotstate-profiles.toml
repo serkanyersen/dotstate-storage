@@ -1,19 +1,15 @@
 [[profiles]]
 name = "Personal"
 synced_files = [
-    ".CFUserTextEncoding",
     ".exportsrc",
     ".gitconfig",
-    ".lesshst",
     ".p10k.zsh",
     ".profile",
     ".sshconfig",
     ".tmux.conf",
     ".vimrc",
-    ".yarnrc",
     ".zshenv",
     ".zshrc",
-    "emoji.json",
 ]
 
 [[profiles.packages]]
