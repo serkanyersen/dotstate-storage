@@ -27,25 +27,102 @@ package_name = "httpie"
 binary_name = "httpie"
 
 [[profiles.packages]]
-name = "trash"
+name = "Trash"
 description = "Trash helper"
 manager = "brew"
 package_name = "trash"
 binary_name = "trash"
 
 [[profiles.packages]]
-name = "rename"
-description = "batch rename tool"
+name = "Rename"
+description = "a batch rename tool"
 manager = "brew"
 package_name = "rename"
 binary_name = "rename"
 
 [[profiles.packages]]
-name = "tig"
-description = "tig git manager"
+name = "Tig"
+description = "Tig git cli"
 manager = "brew"
 package_name = "tig"
 binary_name = "tig"
+
+[[profiles.packages]]
+name = "Midnight Commander"
+description = "Terminal file browser"
+manager = "brew"
+package_name = "mc"
+binary_name = "mc"
+
+[[profiles.packages]]
+name = "Bat"
+description = "Bat is a nice Cat replacement"
+manager = "brew"
+package_name = "bat"
+binary_name = "bat"
+
+[[profiles.packages]]
+name = "Antigen"
+description = "Plugin manager for zsh, inspired by oh-my-zsh and vundle"
+manager = "brew"
+package_name = "antigen"
+binary_name = "antigen"
+
+[[profiles.packages]]
+name = "Github CLI"
+description = "Github cli tools"
+manager = "brew"
+package_name = "gh"
+binary_name = "gh"
+
+[[profiles.packages]]
+name = "NeoVim"
+description = "Better wim"
+manager = "brew"
+package_name = "nvim"
+binary_name = "nvim"
+
+[[profiles.packages]]
+name = "FZF"
+description = "Command-line fuzzy finder"
+manager = "brew"
+package_name = "fzf"
+binary_name = "fzf"
+
+[[profiles.packages]]
+name = "FD"
+description = "Better find"
+manager = "brew"
+package_name = "fd"
+binary_name = "fd"
+
+[[profiles.packages]]
+name = "jq"
+description = "Json Query tool"
+manager = "brew"
+package_name = "jq"
+binary_name = "jq"
+
+[[profiles.packages]]
+name = "tmux"
+description = "remote terminal helper"
+manager = "brew"
+package_name = "tmux"
+binary_name = "tmux"
+
+[[profiles.packages]]
+name = "htop"
+description = "Better system resource monitoring"
+manager = "brew"
+package_name = "htop"
+binary_name = "htop"
+
+[[profiles.packages]]
+name = "atuin"
+description = "Improved shell history for zsh, bash, fish and nushell"
+manager = "brew"
+package_name = "atuin"
+binary_name = "atuin"
 
 [[profiles]]
 name = "Linux"

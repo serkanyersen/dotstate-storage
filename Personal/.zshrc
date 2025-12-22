@@ -13,6 +13,7 @@ source ~/.exportsrc
 antigen use oh-my-zsh
 
 antigen bundle git
+antigen bundle atuinsh/atuin@main
 # antigen bundle github
 antigen bundle npm
 antigen bundle sublime
@@ -34,49 +35,39 @@ antigen apply
 
 export EDITOR='nvim'
 
-# shortcut to connect serkan.io
-# Basic shortcuts
-# alias build="web && ./bin/build web --working $WORKING_DIR --output $OUTPUT_DIR"
-
-# shortcut to connect serkan.io
-if command -v ssh >/dev/null 2>&1 && command -v tmux >/dev/null 2>&1; then
-  alias serkan.io="ssh -i ~/serkan.io.pem serkanio -t 'tmux attach'"
-fi
 # Basic shortcuts
 if command -v clear >/dev/null 2>&1; then
   alias c="clear; printf '\e[3J'"
 fi
 if command -v vim >/dev/null 2>&1; then
-  alias vi="vim"
+  alias vi="nvim"
 fi
+
 if command -v eza >/dev/null 2>&1; then
   alias lst="eza --tree --git-ignore -I node_modules"
   alias ls="eza -lah --git"
 fi
+
 if command -v zsh >/dev/null 2>&1; then
   alias reload="exec zsh"
 fi
+
 if [[ -n "$EDITOR" ]]; then
   alias edit="$EDITOR ~/.zshrc"
 fi
+
 if command -v docker-compose >/dev/null 2>&1; then
   alias dc="docker-compose"
 fi
+
 if command -v bat >/dev/null 2>&1; then
   alias cat="bat"
 fi
+
 if command -v fzf >/dev/null 2>&1 && command -v bat >/dev/null 2>&1; then
   alias preview="fzf --preview 'bat --color \"always\" {}'"
 fi
-if command -v git >/dev/null 2>&1; then
-  alias gitsub="git submodule update --recursive"
-fi
-alias web="cd ~/local/whatsapp/wajs/web"
-alias mweb="cd ~/local/whatsapp/mirror/wajs/web"
 
-export BUILD_DIR='~/local/whatsapp/wajs/web/.build'
-export WORKING_DIR=$BUILD_DIR'/working'
-export OUTPUT_DIR=$BUILD_DIR'/output'
 # alias build="web && ./bin/build web --working $WORKING_DIR --output $OUTPUT_DIR"
 if command -v powermetrics >/dev/null 2>&1 && command -v grep >/dev/null 2>&1; then
   alias cpu-temp="sudo powermetrics --samplers smc |grep -i \"CPU die temperature\""
@@ -108,7 +99,7 @@ unsymlink() {
   cp "$src" "$dest"
 }
 
-export PATH="$PATH:`yarn global bin`:`npm -g bin`"
+export PATH="$PATH:`npm -g bin`"
 
 # added by setup_android_env_var.sh
 export ANDROID_SDK="/Users/$USER/Library/Android/sdk"
