@@ -1,15 +1,15 @@
 [[profiles]]
 name = "Personal"
 synced_files = [
-    ".profile",
-    ".zshrc",
-    ".zshenv",
-    ".p10k.zsh",
-    ".vimrc",
     ".gitconfig",
-    ".tmux.conf",
+    ".p10k.zsh",
+    ".profile",
     ".sshconfig",
+    ".tmux.conf",
+    ".vimrc",
     ".yarnrc",
+    ".zshenv",
+    ".zshrc",
 ]
 
 [[profiles.packages]]
@@ -51,14 +51,14 @@ binary_name = "tig"
 name = "Linux"
 description = "my linux machine setup"
 synced_files = [
-    ".tmux.conf",
-    ".zshrc",
-    ".p10k.zsh",
-    ".sshconfig",
-    ".zshenv",
-    ".vimrc",
-    ".profile",
     ".gitconfig",
+    ".p10k.zsh",
+    ".profile",
+    ".sshconfig",
+    ".tmux.conf",
+    ".vimrc",
+    ".zshenv",
+    ".zshrc",
 ]
 packages = []
 
