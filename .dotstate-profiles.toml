@@ -61,9 +61,3 @@ synced_files = [
     ".zshrc",
 ]
 packages = []
-
-[[profiles]]
-name = "Server-Setup"
-description = "My server setup"
-synced_files = [".yarnrc"]
-packages = []
