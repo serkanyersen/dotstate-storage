@@ -101,6 +101,13 @@ to_mp4() {
   mv output.mp4 "output_$(date +%F-%H:%M).mp4"
 }
 
+unsymlink() {
+  local dest="$1"
+  local src="$2"
+  [ -L "$dest" ] && rm "$dest"
+  cp "$src" "$dest"
+}
+
 export PATH="$PATH:`yarn global bin`:`npm -g bin`"
 
 # added by setup_android_env_var.sh
