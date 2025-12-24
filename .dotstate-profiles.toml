@@ -1,6 +1,7 @@
 [[profiles]]
 name = "Personal"
 synced_files = [
+    ".config/atuin/config.toml",
     ".exportsrc",
     ".gitconfig",
     ".p10k.zsh",
