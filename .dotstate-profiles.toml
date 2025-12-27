@@ -139,3 +139,12 @@ synced_files = [
     ".zshrc",
 ]
 packages = []
+
+[[profiles]]
+name = "exedev"
+description = "exe.dev profile for ubuntu"
+synced_files = [
+    ".profile",
+    ".vimrc",
+]
+packages = []
