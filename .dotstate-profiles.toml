@@ -144,6 +144,8 @@ packages = []
 name = "exedev"
 description = "exe.dev profile for ubuntu"
 synced_files = [
+    ".bashrc",
+    ".gitconfig",
     ".profile",
     ".vimrc",
 ]
