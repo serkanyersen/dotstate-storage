@@ -158,3 +158,10 @@ manager = "custom"
 binary_name = "atuin"
 install_command = "curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh"
 existence_check = "command -v atuin >/dev/null 2>&1"
+
+[[profiles.packages]]
+name = "Eza"
+description = "Eza for ls"
+manager = "apt"
+package_name = "eza"
+binary_name = "eza"
