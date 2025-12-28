@@ -144,6 +144,7 @@ packages = []
 name = "exedev"
 description = "exe.dev profile for ubuntu"
 synced_files = [
+    ".bash_logout",
     ".bashrc",
     ".config/atuin",
     ".gitconfig",
