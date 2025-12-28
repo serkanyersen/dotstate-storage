@@ -166,3 +166,9 @@ description = "Eza for ls"
 manager = "apt"
 package_name = "eza"
 binary_name = "eza"
+
+[[profiles.packages]]
+name = "bat"
+manager = "apt"
+package_name = "bat"
+binary_name = "bat"
