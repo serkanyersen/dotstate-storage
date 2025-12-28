@@ -144,7 +144,31 @@ packages = []
 name = "exedev"
 description = "exe.dev profile for ubuntu"
 synced_files = [
+    ".bash_logout",
+    ".bashrc",
+    ".config/atuin",
+    ".gitconfig",
     ".profile",
     ".vimrc",
 ]
-packages = []
+
+[[profiles.packages]]
+name = "Atuin"
+description = "Magical Shell History"
+manager = "custom"
+binary_name = "atuin"
+install_command = "curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh"
+existence_check = "command -v atuin >/dev/null 2>&1"
+
+[[profiles.packages]]
+name = "Eza"
+description = "Eza for ls"
+manager = "apt"
+package_name = "eza"
+binary_name = "eza"
+
+[[profiles.packages]]
+name = "bat"
+manager = "apt"
+package_name = "bat"
+binary_name = "batcat"
