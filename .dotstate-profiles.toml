@@ -145,8 +145,16 @@ name = "exedev"
 description = "exe.dev profile for ubuntu"
 synced_files = [
     ".bashrc",
+    ".config/atuin",
     ".gitconfig",
     ".profile",
     ".vimrc",
 ]
-packages = []
+
+[[profiles.packages]]
+name = "Atuin"
+description = "Magical Shell History"
+manager = "custom"
+binary_name = "atuin"
+install_command = "curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh"
+existence_check = "command -v atuin >/dev/null 2>&1"
