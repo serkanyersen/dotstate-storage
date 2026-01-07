@@ -173,3 +173,17 @@ name = "bat"
 manager = "apt"
 package_name = "bat"
 binary_name = "batcat"
+
+[[profiles.packages]]
+name = "HTTPIE"
+description = "curl alternative"
+manager = "apt"
+package_name = "httpie"
+binary_name = "httpie"
+
+[[profiles.packages]]
+name = "Docker Compose"
+description = "Docker Compose"
+manager = "apt"
+package_name = "docker-compose"
+binary_name = "docker-compose"
