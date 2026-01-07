@@ -7,7 +7,6 @@ synced_files = [
     ".p10k.zsh",
     ".sshconfig",
     ".tmux.conf",
-    ".yarnrc",
     ".zshenv",
     ".zshrc",
     "scripts",
