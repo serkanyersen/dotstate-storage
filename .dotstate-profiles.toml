@@ -8,7 +8,6 @@ synced_files = [
     ".sshconfig",
     ".tmux.conf",
     ".vimrc",
-    ".yarnrc",
     ".zshenv",
     ".zshrc",
     "scripts",
