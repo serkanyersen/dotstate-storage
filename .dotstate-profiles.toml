@@ -6,6 +6,7 @@ synced_files = [
     ".exportsrc",
     ".gitconfig",
     ".p10k.zsh",
+    ".profile",
     ".sshconfig",
     ".tmux.conf",
     ".zshenv",
@@ -124,6 +125,12 @@ description = "Improved shell history for zsh, bash, fish and nushell"
 manager = "brew"
 package_name = "atuin"
 binary_name = "atuin"
+
+[[profiles.packages]]
+name = "barb"
+manager = "brew"
+package_name = "barb"
+binary_name = "barb"
 
 [[profiles]]
 name = "Linux"
