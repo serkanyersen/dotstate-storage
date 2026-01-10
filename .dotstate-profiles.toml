@@ -9,6 +9,7 @@ synced_files = [
     ".profile",
     ".sshconfig",
     ".tmux.conf",
+    ".vimrc",
     ".zshenv",
     ".zshrc",
     "scripts",
@@ -155,7 +156,7 @@ synced_files = [
 packages = []
 
 [[profiles]]
-name = "exedev"
+name = "Exedev"
 description = "exe.dev profile for ubuntu"
 synced_files = [
     ".bash_logout",
