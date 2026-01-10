@@ -132,6 +132,13 @@ manager = "brew"
 package_name = "barb"
 binary_name = "barb"
 
+[[profiles.packages]]
+name = "micro"
+description = "more than nano, less then vim"
+manager = "brew"
+package_name = "micro"
+binary_name = "micro"
+
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
