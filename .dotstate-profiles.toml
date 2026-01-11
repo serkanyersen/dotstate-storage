@@ -129,12 +129,6 @@ package_name = "atuin"
 binary_name = "atuin"
 
 [[profiles.packages]]
-name = "barb"
-manager = "brew"
-package_name = "barb"
-binary_name = "barb"
-
-[[profiles.packages]]
 name = "micro"
 description = "more than nano, less then vim"
 manager = "brew"
