@@ -8,7 +8,6 @@ synced_files = [
     ".p10k.zsh",
     ".profile",
     ".sshconfig",
-    ".test-folder/aa.txt",
     ".tmux.conf",
     ".vimrc",
     ".zshenv",
