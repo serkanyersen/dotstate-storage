@@ -137,6 +137,13 @@ manager = "brew"
 package_name = "micro"
 binary_name = "micro"
 
+[[profiles.packages]]
+name = "ATAC"
+description = "A simple API client (postman like) in your terminal"
+manager = "brew"
+package_name = "atac"
+binary_name = "atac"
+
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
