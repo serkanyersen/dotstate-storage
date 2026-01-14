@@ -12,7 +12,6 @@ synced_files = [
     ".test-folder/aa.txt",
     ".tmux.conf",
     ".vimrc",
-    ".zshenv",
     ".zshrc",
     "scripts",
 ]
