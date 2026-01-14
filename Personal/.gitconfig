@@ -65,7 +65,7 @@
     id = rev-parse HEAD
 
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = /Users/serkanyersen/.gitignore_global
 
 [filter "media"]
