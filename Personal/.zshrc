@@ -45,7 +45,7 @@ fi
 
 if command -v eza >/dev/null 2>&1; then
   alias lst="eza --tree --git-ignore -I node_modules"
-  alias ls="eza -lah --git"
+  alias ls="eza -lah --icons=always --git"
 fi
 
 if command -v zsh >/dev/null 2>&1; then
