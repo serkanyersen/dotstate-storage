@@ -1,5 +1,9 @@
 [common]
-synced_files = [".gitconfig"]
+synced_files = [
+    ".gitconfig",
+    ".tmux.conf",
+    "scripts",
+]
 
 [[profiles]]
 name = "Personal"
@@ -10,13 +14,10 @@ synced_files = [
     ".p10k.zsh",
     ".profile",
     ".seko-test",
-    ".ssh/known_hosts",
     ".sshconfig",
     ".test-folder/aa.txt",
-    ".tmux.conf",
     ".vimrc",
     ".zshrc",
-    "scripts",
 ]
 
 [[profiles.packages]]
