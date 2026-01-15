@@ -17,7 +17,6 @@ synced_files = [
     ".sshconfig",
     ".test-folder/aa.txt",
     ".vimrc",
-    ".yarnrc",
     ".zshrc",
 ]
 
