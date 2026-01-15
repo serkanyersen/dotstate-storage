@@ -1,10 +1,12 @@
+[common]
+synced_files = [".gitconfig"]
+
 [[profiles]]
 name = "Personal"
 synced_files = [
     ".chirp/chirp.config",
     ".config/atuin/config.toml",
     ".exportsrc",
-    ".gitconfig",
     ".p10k.zsh",
     ".profile",
     ".seko-test",
