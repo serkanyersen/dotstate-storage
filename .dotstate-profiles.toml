@@ -1,5 +1,6 @@
 [common]
 synced_files = [
+    ".config/atuin/config.toml",
     ".gitconfig",
     ".tmux.conf",
     "scripts",
@@ -9,7 +10,6 @@ synced_files = [
 name = "Personal"
 synced_files = [
     ".chirp/chirp.config",
-    ".config/atuin/config.toml",
     ".exportsrc",
     ".p10k.zsh",
     ".profile",
