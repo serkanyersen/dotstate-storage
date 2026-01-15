@@ -166,6 +166,7 @@ synced_files = [
     ".config/atuin",
     ".gitconfig",
     ".profile",
+    ".tmux.conf",
     ".vimrc",
 ]
 
