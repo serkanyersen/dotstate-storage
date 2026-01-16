@@ -207,3 +207,19 @@ description = "Docker Compose"
 manager = "apt"
 package_name = "docker-compose"
 binary_name = "docker-compose"
+
+[[profiles]]
+name = "test"
+description = "this is a development test profile"
+synced_files = [
+    ".chirp/chirp.config",
+    ".exportsrc",
+    ".p10k.zsh",
+    ".profile",
+    ".seko-test",
+    ".sshconfig",
+    ".test-folder",
+    ".vimrc",
+    ".zshrc",
+]
+packages = []
