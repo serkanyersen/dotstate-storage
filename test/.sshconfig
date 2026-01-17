@@ -1,0 +1,12 @@
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+  ControlMaster auto
+  # ControlPath ~/.ssh/master-%r@%h:%p
+  Compression yes
+  ServerAliveCountMax 3
+  ServerAliveInterval 10
+
+Host *
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"

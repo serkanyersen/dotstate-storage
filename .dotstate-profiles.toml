@@ -1,15 +1,24 @@
+[common]
+synced_files = [
+    ".config/atuin/config.toml",
+    ".gitconfig",
+    ".tmux.conf",
+    "scripts",
+]
+
 [[profiles]]
 name = "Personal"
 synced_files = [
-    ".config/atuin/config.toml",
+    ".chirp/chirp.config",
     ".exportsrc",
-    ".gitconfig",
     ".p10k.zsh",
+    ".profile",
+    ".seko-test",
+    ".ssh/known_hosts",
     ".sshconfig",
-    ".tmux.conf",
-    ".zshenv",
+    ".test-folder/aa.txt",
+    ".vimrc",
     ".zshrc",
-    "scripts",
 ]
 
 [[profiles.packages]]
@@ -124,6 +133,20 @@ manager = "brew"
 package_name = "atuin"
 binary_name = "atuin"
 
+[[profiles.packages]]
+name = "micro"
+description = "more than nano, less then vim"
+manager = "brew"
+package_name = "micro"
+binary_name = "micro"
+
+[[profiles.packages]]
+name = "ATAC"
+description = "A simple API client (postman like) in your terminal"
+manager = "brew"
+package_name = "atac"
+binary_name = "atac"
+
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
@@ -140,14 +163,14 @@ synced_files = [
 packages = []
 
 [[profiles]]
-name = "exedev"
+name = "Exedev"
 description = "exe.dev profile for ubuntu"
 synced_files = [
     ".bash_logout",
     ".bashrc",
-    ".config/atuin",
     ".gitconfig",
     ".profile",
+    ".tmux.conf",
     ".vimrc",
 ]
 
@@ -185,3 +208,19 @@ description = "Docker Compose"
 manager = "apt"
 package_name = "docker-compose"
 binary_name = "docker-compose"
+
+[[profiles]]
+name = "test"
+description = "this is a development test profile"
+synced_files = [
+    ".chirp/chirp.config",
+    ".exportsrc",
+    ".p10k.zsh",
+    ".profile",
+    ".seko-test",
+    ".sshconfig",
+    ".test-folder",
+    ".vimrc",
+    ".zshrc",
+]
+packages = []
