@@ -21,7 +21,7 @@ antigen bundle brew
 antigen bundle z
 antigen bundle yarn
 antigen bundle cp
-antigen bundle httpie
+# antigen bundle httpie
 antigen bundle macos
 antigen bundle nvm
 antigen bundle zsh-users/zsh-syntax-highlighting
