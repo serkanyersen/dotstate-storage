@@ -14,6 +14,7 @@ synced_files = [
     ".p10k.zsh",
     ".profile",
     ".seko-test",
+    ".ssh/known_hosts",
     ".sshconfig",
     ".test-folder/aa.txt",
     ".vimrc",
