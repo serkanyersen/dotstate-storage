@@ -19,6 +19,7 @@ synced_files = [
     ".test-folder/aa.txt",
     ".vimrc",
     ".zshrc",
+    "Library/Application Support/tabby/config.yaml",
 ]
 
 [[profiles.packages]]
