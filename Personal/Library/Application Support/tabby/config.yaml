@@ -4,8 +4,7 @@ groups: []
 configSync:
   parts: {}
 hotkeys:
-  toggle-window:
-    - Ctrl-Space
+  toggle-window: []
   copy-current-path: []
   ctrl-c:
     - Ctrl-C
@@ -197,6 +196,7 @@ terminal:
       - '#b7fff9'
       - '#ffffff'
   font: 0xProto Nerd Font Propo
+  customColorSchemes: []
 ssh: {}
 clickableLinks: {}
 accessibility: {}
@@ -209,3 +209,4 @@ pluginBlacklist: []
 profileDefaults:
   ssh:
     disableDynamicTitle: true
+profileBlacklist: []
