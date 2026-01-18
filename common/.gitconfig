@@ -53,6 +53,7 @@
     df = diff HEAD
     lg = log -p
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    amend = commit --amend --no-edit
     # unstage = reset --hard HEAD
     unstage = !sh -c 'git reset --hard HEAD && git clean -fd'
     put = push -u origin HEAD
