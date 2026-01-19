@@ -3,6 +3,7 @@ synced_files = [
     ".config/atuin/config.toml",
     ".gitconfig",
     ".tmux.conf",
+    ".vimrc",
     "scripts",
 ]
 
@@ -17,7 +18,6 @@ synced_files = [
     ".ssh/known_hosts",
     ".sshconfig",
     ".test-folder/aa.txt",
-    ".vimrc",
     ".zshrc",
     "Library/Application Support/tabby/config.yaml",
 ]
@@ -157,7 +157,6 @@ synced_files = [
     ".profile",
     ".sshconfig",
     ".tmux.conf",
-    ".vimrc",
     ".zshenv",
     ".zshrc",
 ]
@@ -172,7 +171,6 @@ synced_files = [
     ".gitconfig",
     ".profile",
     ".tmux.conf",
-    ".vimrc",
 ]
 
 [[profiles.packages]]
@@ -221,7 +219,6 @@ synced_files = [
     ".seko-test",
     ".sshconfig",
     ".test-folder",
-    ".vimrc",
     ".zshrc",
 ]
 packages = []
