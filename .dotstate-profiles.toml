@@ -17,7 +17,6 @@ synced_files = [
     ".seko-test",
     ".ssh/known_hosts",
     ".sshconfig",
-    ".test-folder/aa.txt",
     ".zshrc",
     "Library/Application Support/tabby/config.yaml",
 ]
