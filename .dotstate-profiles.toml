@@ -186,7 +186,6 @@ synced_files = [
     ".p10k.zsh",
     ".profile",
     ".sshconfig",
-    ".tmux.conf",
     ".zshenv",
     ".zshrc",
 ]
