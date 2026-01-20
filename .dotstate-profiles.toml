@@ -19,7 +19,6 @@ synced_files = [
     ".ssh/known_hosts",
     ".sshconfig",
     ".zshrc",
-    "Library/Application Support/tabby/config.yaml",
 ]
 
 [[profiles.packages]]
