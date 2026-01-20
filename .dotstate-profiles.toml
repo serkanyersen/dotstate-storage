@@ -242,6 +242,24 @@ manager = "apt"
 package_name = "jq"
 binary_name = "jq"
 
+[[profiles.packages]]
+name = "gh"
+manager = "apt"
+package_name = "gh"
+binary_name = "gh"
+
+[[profiles.packages]]
+name = "htop"
+manager = "apt"
+package_name = "htop"
+binary_name = "htop"
+
+[[profiles.packages]]
+name = "cowsay"
+manager = "apt"
+package_name = "cowsay"
+binary_name = "cowsay"
+
 [[profiles]]
 name = "test"
 description = "this is a development test profile"
