@@ -200,7 +200,6 @@ synced_files = [
     ".bashrc",
     ".gitconfig",
     ".profile",
-    ".tmux.conf",
 ]
 
 [[profiles.packages]]
