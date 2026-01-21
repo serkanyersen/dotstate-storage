@@ -177,11 +177,16 @@ manager = "brew"
 package_name = "nvm"
 binary_name = "nvm"
 
+[[profiles.packages]]
+name = "vercel"
+manager = "npm"
+package_name = "vercel"
+binary_name = "vercel"
+
 [[profiles]]
 name = "Linux"
 description = "my linux machine setup"
 synced_files = [
-    ".gitconfig",
     ".p10k.zsh",
     ".profile",
     ".sshconfig",
@@ -196,7 +201,6 @@ description = "exe.dev profile for ubuntu"
 synced_files = [
     ".bash_logout",
     ".bashrc",
-    ".gitconfig",
     ".profile",
     ".ssh/known_hosts",
 ]
