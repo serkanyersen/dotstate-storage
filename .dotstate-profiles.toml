@@ -225,6 +225,7 @@ packages = []
 name = "Exedev"
 description = "exe.dev profile for ubuntu"
 synced_files = [
+    ".bash-preexec.sh",
     ".bash_logout",
     ".bashrc",
     ".profile",
@@ -289,6 +290,14 @@ name = "cowsay"
 manager = "apt"
 package_name = "cowsay"
 binary_name = "cowsay"
+
+[[profiles.packages]]
+name = "neovim repo"
+description = "this is the ppa for latest version of neovim"
+manager = "custom"
+binary_name = "none"
+install_command = "~/scripts/exedev-neovim.sh"
+existence_check = "ls ~/.install-done"
 
 [[profiles]]
 name = "test"
