@@ -12,6 +12,7 @@ synced_files = [
 name = "Personal"
 synced_files = [
     ".chirp/chirp.config",
+    ".config/nvim",
     ".exportsrc",
     ".p10k.zsh",
     ".profile",
@@ -182,6 +183,31 @@ name = "vercel"
 manager = "npm"
 package_name = "vercel"
 binary_name = "vercel"
+
+[[profiles.packages]]
+name = "ripgrep"
+description = "ripgrep recursively searches directories for a regex pattern while respecting your gitignore"
+manager = "brew"
+package_name = "ripgrep"
+binary_name = "rg"
+
+[[profiles.packages]]
+name = "luarocks"
+manager = "brew"
+package_name = "luarocks"
+binary_name = "luarocks"
+
+[[profiles.packages]]
+name = "wget"
+manager = "brew"
+package_name = "wget"
+binary_name = "wget"
+
+[[profiles.packages]]
+name = "ast-grep"
+manager = "brew"
+package_name = "ast-grep"
+binary_name = "ast-grep"
 
 [[profiles]]
 name = "Linux"

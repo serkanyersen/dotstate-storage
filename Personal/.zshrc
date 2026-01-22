@@ -39,8 +39,10 @@ export EDITOR='nvim'
 if command -v clear >/dev/null 2>&1; then
   alias c="clear; printf '\e[3J'"
 fi
-if command -v vim >/dev/null 2>&1; then
+
+if command -v nvim >/dev/null 2>&1; then
   alias vi="nvim"
+  alias vim="nvim"
 fi
 
 if command -v eza >/dev/null 2>&1; then
