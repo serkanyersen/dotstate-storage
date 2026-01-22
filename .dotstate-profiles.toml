@@ -1,5 +1,6 @@
 [common]
 synced_files = [
+    ".claude/skills",
     ".config/atuin/config.toml",
     ".config/nvim",
     ".gitconfig",
