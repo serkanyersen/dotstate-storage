@@ -263,6 +263,95 @@ fn tick(&mut self) -> Result<ScreenAction> {
 8. Adding directories without validating symlinks first (can crash on circular symlinks)
 9. Assuming copy_dir_all preserves symlinks (it dereferences them)
 
+## Website Documentation
+
+The DotState website is an Astro-based static site with a TUI aesthetic, deployed on Vercel.
+
+### Website Structure
+
+```
+website/
+├── src/
+│   ├── pages/
+│   │   └── index.astro      # Main page with all content sections
+│   ├── components/          # Reusable Astro components
+│   │   ├── CodeBlock.astro      # Code with copy button
+│   │   ├── CommandCard.astro    # CLI command documentation
+│   │   ├── FeatureCard.astro    # Feature display cards
+│   │   ├── InstallWidget.astro  # Tabbed install commands
+│   │   ├── Comparison.astro     # Side-by-side comparison
+│   │   ├── Tip.astro            # Info/success/warning tips
+│   │   ├── Step.astro           # Numbered steps
+│   │   └── ...
+│   ├── layouts/
+│   │   └── Layout.astro     # Base layout with SEO meta tags
+│   └── styles/
+│       └── global.css       # TUI styling with CSS variables
+├── public/
+│   └── install.sh           # Install script (served at /install.sh)
+├── astro.config.mjs         # Astro configuration
+├── vercel.json              # Vercel deployment config
+└── package.json
+```
+
+### Website Design System
+
+The website uses a TUI-inspired design with:
+
+- **ASCII icons**: `[~]` `[*]` `[+]` `[>]` `[$]` `[#]` `[%]` `[!]` `[&]` instead of emojis
+- **Box-drawing lists**: `├─` and `└─` for tree-style lists
+- **CSS variables** in `global.css`:
+  - `--bg-primary`, `--bg-secondary`, `--bg-tertiary` - backgrounds
+  - `--accent-cyan`, `--accent-green` - accent colors
+  - `--border-color`, `--border-dim` - borders
+  - `--glow-cyan`, `--glow-green` - glow effects
+- **Scanline effect**: Subtle CRT-style overlay
+- **Terminal chrome**: Headers with box-drawing characters
+
+### Updating Website Content
+
+**CLI Commands** are in the CLI Commands section of `index.astro`:
+```astro
+<CommandCard
+    command="dotstate sync"
+    description="Sync with remote..."
+    options="<code>-m, --message</code> Custom commit message"
+    example="dotstate sync -m 'Update zshrc'"
+/>
+```
+
+**Features** use FeatureCard components:
+```astro
+<FeatureCard icon="[@]" title="Profile Management">
+    Description here.
+</FeatureCard>
+```
+
+**Code examples** use CodeBlock:
+```astro
+<CodeBlock code="cargo install dotstate" />
+```
+
+### When to Update the Website
+
+Update the website when:
+1. **New CLI commands** are added - add to CLI Commands section
+2. **New features** are added - add to Features section
+3. **Installation methods change** - update InstallWidget
+4. **Configuration options change** - update Configuration section
+5. **Version numbers** - header shows version in terminal chrome
+
+### Building the Website
+
+```bash
+cd website
+npm install          # Install dependencies
+npm run build        # Build for production
+npm run preview      # Preview locally at localhost:4173
+```
+
+Website is auto-deployed to Vercel on push to main.
+
 ## Additional Resources
 
 For detailed architecture and data flow, see:
