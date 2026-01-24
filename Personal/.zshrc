@@ -142,3 +142,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # Added by Antigravity
 export PATH="/Users/serkan/.antigravity/antigravity/bin:$PATH"
 export PATH="$(go env GOPATH)/bin:$PATH"
+
+# opencode
+export PATH=/Users/serkan/.opencode/bin:$PATH
