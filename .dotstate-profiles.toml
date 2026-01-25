@@ -21,7 +21,6 @@ synced_files = [
     ".seko-test",
     ".ssh/known_hosts",
     ".sshconfig",
-    ".zshenv",
     ".zshrc",
 ]
 
