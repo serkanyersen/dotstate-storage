@@ -1,5 +1,5 @@
 ---
-name: DotState Development
+name: DotStateDevelopment
 description: This skill should be used when working on the DotState project (llm-tui or dotstate repository), "dotstate development", "add a screen to dotstate", "create a dotstate feature", "fix dotstate bug", "dotstate architecture", or any task involving the Rust TUI dotfile manager codebase.
 ---
 
