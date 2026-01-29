@@ -1,5 +1,5 @@
 ---
-name: Gemini Large Codebase Analysis
+name: Gemini-Large-Codebase-Analysis
 description: Use this skill when you need to analyze large codebases, multiple files totaling over 100KB, entire project directories, or when your current context window is insufficient for the analysis task. Invoke Gemini CLI to leverage its massive context window for comprehensive codebase analysis, architecture review, implementation verification, and cross-file pattern searching.
 ---
 
