@@ -6,6 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+fpath=(~/.zsh/completions $fpath)
 source `brew --prefix`/share/antigen/antigen.zsh
 source ~/.exportsrc
 
@@ -145,3 +146,5 @@ export PATH="$(go env GOPATH)/bin:$PATH"
 
 # opencode
 export PATH=/Users/serkan/.opencode/bin:$PATH
+
+# dotstate completions loaded via fpath (~/.zsh/completions/_dotstate)
