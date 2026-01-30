@@ -93,7 +93,7 @@ set expandtab
 set hidden
 
 " "dark" or "light", used for highlight colors
-colorscheme solarized
+" colorscheme solarized
 let g:solarized_termcolors=256
 set background=dark
 call togglebg#map("<F5>")
